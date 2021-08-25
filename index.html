@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Typewriter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.min.js"
+        integrity="sha512-o6alMAMTI5qAmVC1UvuRPgTl3UOOkP8NZ6212+rq1Oslsuy8Owt9r5Z0Wu0LNxpw/Q8N8ToGiyovHV+kyOulxg=="
+        crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Hover -->
+    <link rel="stylesheet" href="hover/css/hover.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/23901fd2f3.js" crossorigin="anonymous"></script>
+
+    <title>Utkarsh | Home </title>
+    <style>
+        body {
+            background-color: rgba(219, 235, 217, 0.5);
+        }
+
+        .navbar-collapse {
+            flex-grow: 0;
+        }
+
+        .hvr-underline-from-left:before {
+            background: rgb(74, 197, 139);
+        }
+
+        .nav-link:hover .hvr-underline-from-left:before {
+            background: rgb(74, 197, 139);
+        }
+
+        .nav-link.active:before {
+            right: 0;
+            background: rgb(74, 197, 139);
+        }
+
+        /* .nav-link.active {
+            color: white !important;
+        } */
+
+        .nav-link:active {
+            transform: scale(0.98);
+        }
+
+        .navbar-brand:hover {
+            color: rgb(74, 197, 139) !important;
+        }
+
+        .header-image {
+            text-align: center;
+            /* background-color: rgba(74, 197, 139, 0.8); */
+            background-image: linear-gradient(to left,
+                    rgb(74, 197, 139),
+                    rgb(95, 95, 95));
+            min-height: 82vh;
+            line-height: 82vh;
+        }
+
+        .underline {
+            height: 3px;
+            width: 200px;
+            background-color: rgb(74, 197, 139) !important;
+
+        }
+
+        .fa-desktop {
+            color: black;
+            font-size: 10rem;
+        }
+
+        .fa-mobile {
+            color: black;
+            font-size: 3rem;
+        }
+
+        .my_btn {
+            font-size: 1em;
+            padding: 0.7rem 4rem;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            background-color: rgb(74, 197, 139);
+            border-radius: 0.6rem;
+            color: rgb(95, 95, 95);
+            border: none;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        i:hover {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fs-5">
+                <div class="container-fluid d-flex justify-content-md-evenly">
+                    <a class="navbar-brand fs-3" href="#">UTKARSH</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item mx-md-2">
+                                <a class="nav-link active hvr-underline-from-left active" aria-current="page"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-md-2">
+                                <a class="nav-link hvr-underline-from-left" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item mx-md-2">
+                                <a class="nav-link hvr-underline-from-left" href="project.html">Project</a>
+                            </li>
+                            <li class="nav-item mx-md-2">
+                                <a class="nav-link hvr-underline-from-left" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form> -->
+                    </div>
+                    <div class="d-none d-md-flex">
+                        <i class="bi bi-linkedin p-2"></i>
+                        <i class="bi bi-github p-2"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="text-center col-12 header-image">
+                <div class="row h-100">
+                    <div class="col-md-6 d-flex mt-md-5 justify-content-center align-items-center align-items-md-start">
+                        <p class="h1 primary-bold  mt-5" id="typewriter" style="color:white;"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <i class="fas fa-desktop"></i>
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-5 col-11 p-5 bg-white mt-5 me-md-3  shadow">
+                <div class="bg-white">
+                    <p class="h1">Frontend</p>
+                    <div class="underline mb-3"></div>
+                    <ul>
+                        <li class="fs-5">
+                            HTML
+                        </li>
+                        <li class="fs-5">
+                            CSS
+                        </li>
+                        <li class="fs-5">
+                            JAVASCRIPT
+                        </li>
+                        <li class="fs-5">
+                            BOOTSTRAP
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-11 p-5 bg-white mt-5 ms-md-3 shadow">
+                <div class="bg-white">
+                    <p class="h1">Backend</p>
+                    <div class="underline mb-3"></div>
+                    <ul>
+                        <li class="fs-5">
+                            PHP
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="projects col-12 mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 d-flex  align-items-center flex-column">
+                        <p class="h3 mt-5 mb-3">Project 1</p>
+                        <div class="underline mb-3 text-center"></div>
+                    </div>
+
+                    <!-- <div class="project row">
+                        <div class="col-md-6">
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1572177812156-58036aae439c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, delectus magnam fuga
+                                vitae
+                                soluta sunt
+                                iure possimus nostrum. Culpa repellat cumque veniam placeat voluptas consequatur minus,
+                                nulla
+                                aliquam
+                                incidunt eaque?</p>
+                        </div>
+                    </div> -->
+                    <div class="col-12 d-flex align-items-center flex-column">
+                        <p class="h3 mt-5 mb-3">Project 2</p>
+                        <div class="underline mb-3 text-center"></div>
+                    </div>
+                    <div class="project row">
+                        <div class="col-sm-6">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error itaque neque maiores
+                                quia,
+                                quo
+                                veritatis, quaerat ipsa quod iure rem officia omnis vitae quasi? Doloribus iusto
+                                repellendus
+                                officiis
+                                facilis suscipit!</p>
+
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-fluid" src="project 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center  flex-column">
+                        <p class="h3 mt-5 mb-3 ">Project 3</p>
+                        <div class="underline mb-3 text-center"></div>
+                    </div>
+                    <div class="project row">
+                        <div class="col-sm-6">
+                            <img class="img-fluid" src="project 2.png" alt="">
+                        </div>
+                        <div class="col-sm-6">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda libero enim in,
+                                placeat
+                                illum
+                                esse
+                                quis repellat voluptate vel fugit voluptates. Alias quia, saepe eaque accusamus ex
+                                mollitia
+                                architecto
+                                quisquam.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <a href="project.html" class="btn my_btn mt-5">more</a>
+                    </div>
+                </div>
+            </section>
+            <footer class="col-12 mt-5 bg-dark text-white pt-5">
+                <div class="footer row justify-content-md-evenly">
+
+                    <div class="contact-details col-md-4">
+                        <p>Mobile number :(+91) 8516924735</p>
+                        <p>Adress : Rajeev nagar vidisha (M.P)</p>
+                        <p>E-mail : utkarshdixit998@gmail.com</p>
+                    </div>
+
+                    <ul class="col-md-4 d-flex d-md-block">
+                        <li><i class="bi bi-github me-3 me-md-0"></i></li>
+                        <li><i class="bi bi-linkedin"></i></li>
+                    </ul>
+
+                </div>
+                <p class="foot text-center mt-4">Made by Utkarsh Dixit</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        //typewriter
+        var app1 = document.getElementById('typewriter');
+
+        var contact_typewriter = new Typewriter(app1, {
+            delay: 50,
+            loop: true
+        });
+
+        contact_typewriter.typeString('Mobile Responsive')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('Fully Customizable')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('Multimedia')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('Digital')
+            .pauseFor(2500)
+            .start();
+    </script>
+
+</body>
+
+</html>
